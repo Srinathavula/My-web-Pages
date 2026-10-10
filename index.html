@@ -55,7 +55,7 @@ body:has(a:hover) .cursor-ring { width: 48px; height: 48px; border-color: var(--
 body::before {
   content: '';
   position: fixed; inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves=4/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='table' tableValues='0 0.15'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='256' height='256' filter='url(%23noise)'/%3E%3C/svg%3E");
   pointer-events: none; z-index: 1; opacity: 0.4;
 }
 
@@ -458,7 +458,7 @@ footer {
   </div>
 
   <div class="exp-card reveal reveal-delay-1">
-    <div class="exp-period">Jan 2026 — Feb 2026</div>
+    <div class="exp-period">Jan 2026 — Jun 2026</div>
     <div class="exp-role">QA Automation Engineer Intern</div>
     <div class="exp-company">Pixelvide · IFMIS Government Financial Management System · Hyderabad</div>
     <ul class="exp-list">
@@ -627,7 +627,7 @@ footer {
 <section id="certifications">
   <div class="section-header reveal">
     <span class="section-tag">// 04 — Certifications</span>
-    <h2 class="section-title">Credentials &<br>Achievements.</h2>
+    <h2 class="section-title">Credentials &amp;<br>Achievements.</h2>
   </div>
 
   <div class="certs-grid">
